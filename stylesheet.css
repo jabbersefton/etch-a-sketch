@@ -1,1 +1,6 @@
 /* CSS for Etch a Sketch project */
+.box{
+	width:20px;
+	height:20px;
+	border:1px solid black;
+	}
