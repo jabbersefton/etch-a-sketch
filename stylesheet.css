@@ -6,3 +6,8 @@
 	margin:2px;
 	float:left;
 	}
+
+.gridRow{
+	height:24px;
+	clear:both;
+}
