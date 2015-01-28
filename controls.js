@@ -7,15 +7,18 @@ $(document).ready(function(){
 	for(  i = 0; i < 16; i++){
         $("#container").prepend($gridRow);       
     
-}
+	}
     
     for( i = 0; i < 16; i++){
         $(".gridRow").prepend($square);
         var squareSize = ($container.width() / 16) - 6;
         $(".square").width(squareSize).height(squareSize);
-        console.log(squareSize);        
-    
-}	      
+     }
+     
+   $( ".square" ).hover(function() {
+  $( this ).css({ "background-color": "blue" });
+  
+});
         
 });
 	
