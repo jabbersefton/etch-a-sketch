@@ -5,18 +5,18 @@ $(document).ready(function(){
     $square = '<div class="square"></div>';
     $gridRow ='<div class="gridRow"></div>'; 	
 	for(  i = 0; i < 16; i++){
-        $("#container").prepend($gridRow);       
-    
+        $("#container").prepend($gridRow);    
 	}
     
-    for( i = 0; i < 16; i++){
+    for( j = 0; j < 16; j++){
         $(".gridRow").prepend($square);
         var squareSize = ($container.width() / 16) - 6;
         $(".square").width(squareSize).height(squareSize);
      }
      
    $( ".square" ).hover(function() {
-  $( this ).css({ "background-color": "blue" });
+	 var col = 'rgb(' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ')';
+	 $( this ).css({ "background-color": col });
   
 });
         
