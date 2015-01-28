@@ -1,5 +1,10 @@
 /* CSS for Etch a Sketch project */
-.box{
+#container{
+	width:960px;
+	margin:auto;
+}
+
+.square{
 	width:20px;
 	height:20px;
 	border:1px solid black;
