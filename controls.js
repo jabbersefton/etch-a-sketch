@@ -7,10 +7,10 @@ $(document).ready(function(){
 	for(  i = 0; i < 16; i++){
         $("#container").prepend($gridRow);    
 	}
-    
+    // created a row then added divs to row then repeated row
     for( j = 0; j < 16; j++){
         $(".gridRow").prepend($square);
-        var squareSize = ($container.width() / 16) - 6;
+        var squareSize = ($container.width() / 16) - 6; // minus 6 due to margin of 2px and 1px border.  
         $(".square").width(squareSize).height(squareSize);
      }
      
