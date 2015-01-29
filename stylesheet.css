@@ -14,3 +14,11 @@
 	height:24px;
 	clear:both;
 }
+
+#clearBut{
+	display: block;
+	margin: 20px auto;
+	padding: 10px;
+	width: 50%;
+}
+	
